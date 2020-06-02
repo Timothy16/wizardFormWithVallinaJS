@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+ <div class="container mt-5">
+     <h1>Wizard Form</h1>
+     <p>Understanding Wizard Form</p>
+         <div class="stepwizard">
+            <div class="stepwizard-row">
+                <div class="stepwizard-step col-lg-3"> 
+                    <a href="" type="button" class="btn btn-success btn-circle">1</a>
+                    <p><small>Personal Information</small></p>
+                </div>
+                <div class="stepwizard-step col-lg-3" > 
+                    <a href="" type="button" class="btn btn-default btn-circle header1" disabled="disabled">2</a>
+                    <p><small>Educational Background</small></p>
+                </div>
+                <div class="stepwizard-step col-lg-3"> 
+                    <a href="" type="button" class="btn btn-default btn-circle header2" disabled="disabled">3</a>
+                    <p><small>Career</small></p>
+                </div>
+                <div class="stepwizard-step col-lg-3" id="header3"> 
+                    <a href="" type="button" class="btn btn-default btn-circle header3" disabled="disabled">4</a>
+                    <p><small>Skills</small></p>
+                </div>  
+            </div>
+         </div>
+
+     <div class="card shadow mt-3">
+        <div class="card-body card_display active">
+            <form action="">
+
+           
+                <h5 class="modal-title" id="exampleModalLabel">PERSONAL INFORMATION</h5>
+                <p>Please fill this form correctly!</p>
+                <hr>
+                 <div class="form-row">
+                    <div class="col">
+                    <label for="exampleInputEmail1">First Name</label>
+                    <input type="text" class="form-control" placeholder="First Name">
+                    </div>
+                    <div class="col">
+                    <label for="exampleInputEmail1">Last Name</label>
+                    <input type="text" class="form-control" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="form-row mt-3">
+                    <div class="col">
+                    <label for="exampleInputEmail1">Email</label>
+                    <input type="text" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="col">
+                    <label for="exampleInputEmail1">Contact Address</label>
+                    <input type="text" class="form-control" placeholder="Contact Address">
+                    </div>
+                </div>
+                <div class="form-row mt-3">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Gender</label>
+                            <select class="custom-select increase_height" name="">
+                                <option value="" selected disabled>Gender</option>
+                                <option value="">Male</option>
+                                <option value="">Feamle</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label for="exampleInputEmail1">Telephone Number</label>
+                    <input type="text" class="form-control" placeholder="Telephone Number">
+                    </div>
+                </div>
+                </form>
+        </div>
+
+
+
+        <div class="card-body card_display">
+            <form action="">
+                <h5 class="modal-title" id="exampleModalLabel">EDUCATIONAL BACKGROUND</h5>
+                <p>Please fill this form correctly!</p>
+                <hr>
+                <div class="mt-3">
+                    <label for="exampleInputEmail1">Name of Institution</label>
+                    <input type="text" class="form-control" placeholder="Name of Institution">
+                    <label for="exampleInputEmail1" class="mt-3">Department</label>
+                    <input type="text" class="form-control" placeholder="Department">
+                    <label for="exampleInputEmail1" class="mt-3">Course of Study</label>
+                    <input type="text" class="form-control" placeholder="Course of Study">
+                    </div>
+               </div>
+            </form> 
+    
+       <div class="card-body card_display">
+           <form action="" method="post">
+                <h5 class="modal-title" id="exampleModalLabel">CAREER</h5>
+                <p>Please fill this form correctly!</p>
+                <hr>
+                <div class="mt-3">
+                <label for="exampleInputEmail1">Working Experience</label>
+               <input type="text" class="form-control" placeholder="Woking Experience">
+               <label for="exampleInputEmail1" class="mt-3">Position Held</label>
+               <input type="text" class="form-control" placeholder="Position Held">
+               <label for="exampleInputEmail1" class="mt-3">Job description</label>
+               <input type="text" class="form-control" placeholder="Job Description">
+               </div>
+              </form>  
+        </div>
+
+        <div class="card-body card_display">
+           <form action="">
+            <h5 class="modal-title" id="exampleModalLabel">SKILLS</h5>
+            <p>Please fill this form correctly!</p>
+            <hr>
+            <div class="mt-3">
+            <label for="exampleInputEmail1">Track</label>
+            <select class="custom-select increase_height" name="">
+                <option value="" selected disabled>Track</option>
+                <option value="">Front-End</option>
+                <option value="">Back-Ennd</option>
+                <option value="">Andriod</option>
+                <option value="">UI/UX</option>
+            </select>
+           <label for="exampleInputEmail1" class="mt-3">Have you worked on any project before? If Yes provide the name below</label>
+           <input type="text" class="form-control" placeholder="Project Name">
+           <label for="exampleInputEmail1" class="mt-3">Tell us about you</label>
+           <input type="text" class="form-control" placeholder="About You">
+           </div>
+            </form>
+    </div>             
+         
+        </div>
+        <div class="card-body">
+             <div class="mt-3">
+            <button type="submit" class="btn btn-primary prev">Previous</button>
+            <button type="submit" class="btn btn-secondary next">Next</button>
+            <button type="submit" class="btn btn-success float-right next mr-5" id="hide">Submit</button>
+            
+        </div>
+        </div>
+       
+
+
+        </div>
+        
+
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
